@@ -1,8 +1,8 @@
-Number 1
+// Number 1
 let number = prompt("Enter a number:");
 document.write("Output: " + number);
 
-Number 2 
+// Number 2 
 let number = prompt("Enter a number:");
 number = Number(number);
 if (number % 3 === 0 && number % 4 === 0) {
@@ -14,7 +14,7 @@ if (number % 3 === 0 && number % 4 === 0) {
 
 }
 
-Number 3 
+// Number 3 
 let num1 = prompt("Enter the first integer:");
 let num2 = prompt("Enter the second integer:");
 num1 = Number(num1);
@@ -23,7 +23,7 @@ let max = num1 > num2 ? num1 : num2;
 console.log("Output:", max);
 document.write(max);
 
-Number 4 
+// Number 4 
 let number = prompt("Enter an integer:");
 number = Number(number);
 if (number < 0) {
@@ -34,7 +34,7 @@ if (number < 0) {
     document.write("positive");
 }
 
-Number 5 
+// Number 5 
 let num1 = Number(prompt("Enter the first integer:"));
 let num2 = Number(prompt("Enter the second integer:"));
 let num3 = Number(prompt("Enter the third integer:"));
@@ -61,7 +61,7 @@ console.log("Min element =", min);
 document.write("Max element: " + max + "<br>");
 document.write("Min element: " + min);
 
-Number 6
+// Number 6
 let number = Number(prompt("Enter an integer:"));
 if (number % 2 === 0) {
     console.log("Output: even");
@@ -71,7 +71,7 @@ if (number % 2 === 0) {
     document.write("Odd");
 }
 
-Number 7 
+// Number 7 
 let character = prompt("Enter a character:");
 let lowerChar = character.toLowerCase();
 if (lowerChar === 'a' || lowerChar === 'e' || lowerChar === 'i' || lowerChar === 'o' || lowerChar === 'u') {
@@ -82,7 +82,7 @@ if (lowerChar === 'a' || lowerChar === 'e' || lowerChar === 'i' || lowerChar ===
     document.write("consnant");
 }
 
-Number 8 
+// Number 8 
 let number = Number(prompt("Enter an integer:"));
 let output = "";
 for (let i = 1; i <= number; i++) {
@@ -96,7 +96,7 @@ for (let i = 1; i <= number; i++) {
 console.log("Output: " + output);
 document.write(output);
 
-Number 9 
+// Number 9 
 let number = Number(prompt("Enter an integer:"));
 let output = "";
 for (let i = 1; i <= 12; i++) {
@@ -111,7 +111,7 @@ for (let i = 1; i <= 12; i++) {
 console.log("Output: " + output);
 document.write(output);
 
-Number 10 
+// Number 10 
 let number = Number(prompt("Enter a number:"));
 let output = "";
 for (let i = 2; i <= number; i += 2) {
@@ -125,7 +125,7 @@ for (let i = 2; i <= number; i += 2) {
 console.log("Output: " + output);
 document.write(output);
 
-Number 11
+// Number 11
 let base = Number(prompt("Enter the base number:"));
 let exponent = Number(prompt("Enter the exponent:"));
 let result = 1;
@@ -135,7 +135,7 @@ for (let i = 1; i <= exponent; i++) {
 console.log("Output: " + result);
 document.write(result);
 
-Number 12 
+// Number 12 
 let marks1 = Number(prompt("Enter marks for subject 1:"));
 let marks2 = Number(prompt("Enter marks for subject 2:"));
 let marks3 = Number(prompt("Enter marks for subject 3:"));
@@ -151,7 +151,7 @@ document.write("Total marks = " + total + "<br>");
 document.write("Average marks = " + average + "<br>");
 document.write("Percentage = " + percentage + "%" + "<br>");
 
-Number 13
+// Number 13
 let monthNumber = Number(prompt("Enter month number (1-12):"));
 let daysInMonth;
 if (monthNumber === 1 || monthNumber === 3 || monthNumber === 5 || monthNumber === 7 || 
@@ -170,7 +170,7 @@ else {
 console.log("Days in Month: " + daysInMonth);
 document.write("Days in Month: " + daysInMonth);
 
-Number 14 
+// Number 14 
 let physics = Number(prompt("Enter marks for Physics:"));
 let chemistry = Number(prompt("Enter marks for Chemistry:"));
 let biology = Number(prompt("Enter marks for Biology:"));
@@ -201,11 +201,37 @@ document.write("Total Marks = " + totalMarks + "<br>");
 document.write("Percentage = " + percentage + "%<br>");
 document.write("Grade = " + grade);
 
-Switch Cases 
-N0.1 
+// Switch Cases 
+// N0.1 
+let monthNumber = Number(prompt("Enter month number (1-12):"));
+let daysInMonth;
+
+switch (monthNumber) {
+    case 1:  
+    case 3:  
+    case 5:  
+    case 7:  
+    case 8:  
+    case 10: 
+    case 12: 
+        daysInMonth = 31;
+        break;
+    case 4:  
+    case 6: 
+    case 9:  
+    case 11: 
+        daysInMonth = 30;
+        break;
+    case 2:  // February
+        daysInMonth = 28; // Assuming no leap year (you can add leap year logic if needed)
+        break;
+    default:
+        daysInMonth = "Invalid month number"; // For invalid month numbers
+}
+document.write("Days in Month: " + daysInMonth);
 
 
-NO.2
+// NO.2
 let character = prompt("Enter an alphabet:").toLowerCase(); 
 let result;
 switch (character) {
@@ -225,7 +251,7 @@ switch (character) {
 }
 document.write("The character " + character + " is a " + result);
 
-NO.3
+// NO.3
 let num1 = Number(prompt("Enter the first number:"));
 let num2 = Number(prompt("Enter the second number:"));
 let max;
@@ -242,7 +268,7 @@ switch (true) {
 }
 document.write("The maximum number is: " + max);
 
-NO.4
+// NO.4
 let number = Number(prompt("Enter a number:"));
 let result;
 switch (number % 2) {
@@ -257,7 +283,7 @@ switch (number % 2) {
 }
 document.write("The number " + number + " is " + result + ".");
 
-NO.5
+// NO.5
 let number = Number(prompt("Enter a number:"));
 let result;
 switch (true) {
@@ -275,7 +301,7 @@ switch (true) {
 }
 document.write("The number " + number + " is " + result + ".");
 
-NO.6
+// NO.6
 let num1 = Number(prompt("Enter the first number:"));
 let num2 = Number(prompt("Enter the second number:"));
 let operation = prompt("Enter operation (+, -, *, /):");
